@@ -1,4 +1,65 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+# Site metadata
+baseURL = 'https://blag.potatoe.ca/'
+title = 'Stuff and Things'
+author = 'Spike (pastthepixels)'
+copyright = 'CC-BY-SA [PastThePixels](https://potatoe.ca/pastthepixels)'
+
+# i18n
+languageCode = 'en-ca'
+DefaultContentLanguage = 'en'
+
+# Theme/UI
 theme = 'risotto'
+sectionPagesMenu = "main"
+enableInlineShortcodes = true
+
+# I have zero idea what this does
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-light"
+
+# About
+[params.about]
+title = "Stuff and Things"
+description = "Strange rambles for everything from technology to art."
+logo_image = "images/stuffandthings.svg"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-id-card"
+title = "Contact"
+url = "https://potatoe.ca/pastthepixels"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:pastthescreen@protonmail.com"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-code"
+title = "GitHub"
+url = "https://github.com/pastthepixels/blag"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-web"
+title = "Email"
+url = "mailto:pastthescreen@protonmail.com"
+
+# Menu
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[markup]
+
+# Table of contents
+# Add toc = true to content front matter to enable
+	[markup.tableOfContents]
+	startLevel = 2
+	endLevel   = 3
+	ordered    = true
